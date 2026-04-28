@@ -12,7 +12,8 @@
     "seed": "ts-node prisma/seed.ts",
     "studio": "prisma studio",
     "generate": "prisma generate",
-    "vercel-build": "prisma generate && tsc"
+    "vercel-build": "prisma generate && tsc",
+    "postinstall": "prisma generate"
   },
   "keywords": [],
   "author": "",
