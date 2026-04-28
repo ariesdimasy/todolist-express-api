@@ -48,7 +48,7 @@ export class TodoController {
     next: NextFunction
   ): Promise<void> {
     try {
-      const id = parseInt(req.params.id, 10);
+      const id = parseInt(String(req.params.id), 10);
 
       if (isNaN(id) || id <= 0) {
         res.status(400).json({
@@ -96,7 +96,7 @@ export class TodoController {
    */
   async update(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const id = parseInt(req.params.id, 10);
+      const id = parseInt(String(req.params.id), 10);
 
       if (isNaN(id) || id <= 0) {
         res.status(400).json({
@@ -126,7 +126,7 @@ export class TodoController {
    */
   async delete(req: Request, res: Response, next: NextFunction): Promise<void> {
     try {
-      const id = parseInt(req.params.id, 10);
+      const id = parseInt(String(req.params.id), 10);
 
       if (isNaN(id) || id <= 0) {
         res.status(400).json({
