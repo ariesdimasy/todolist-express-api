@@ -2,11 +2,11 @@ import express, { Application, Request, Response } from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 
-import todoRouter from "./routes/todo.route";
+import todoRouter from "./src/routes/todo.route";
 import {
   errorMiddleware,
   notFoundMiddleware,
-} from "./middlewares/error.middleware";
+} from "./src/middlewares/error.middleware";
 
 // Load environment variables
 dotenv.config();
