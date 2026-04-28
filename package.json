@@ -2,17 +2,7 @@
   "name": "todo-express-api",
   "version": "1.0.0",
   "description": "Todo List REST API with Express, TypeScript, Prisma, and PostgreSQL",
-  "main": "dist/server.js",
-  "scripts": {
-    "dev": "nodemon --watch src --ext ts --exec ts-node src/server.ts",
-    "build": "tsc",
-    "start": "node dist/server.js",
-    "migrate": "prisma migrate dev",
-    "migrate:deploy": "prisma migrate deploy",
-    "seed": "ts-node prisma/seed.ts",
-    "studio": "prisma studio",
-    "generate": "prisma generate"
-  },
+  "main": "dist/app.js",
   "keywords": [],
   "author": "",
   "license": "ISC",
